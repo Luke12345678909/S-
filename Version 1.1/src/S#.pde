@@ -6,16 +6,16 @@ class System={
   }
  color[][] pixels=[];
 void start(){
-for(var i=0;i<w;i++){
-for(var j=0;j<h;j++){
+for(float i=0;i<w;i++){
+for(float j=0;j<h;j++){
 this.pixels.push([]);
 this.pixels[i].push(color(255,255,255));
 }
 }
 };
 void background(color col){
- for(var i=0;i<w;i++){
-   for(var j=0;j<h;j++){
+ for(float i=0;i<w;i++){
+   for(float j=0;j<h;j++){
      this.pixels[i][j]=col;
    }
  }
@@ -26,8 +26,8 @@ this.pixels[x][y]=col;
 }
 };
 void updateScreen(){
-for(var i=0;i<w;i++){
-for(var j=0;j<h;j++){
+for(float i=0;i<w;i++){
+for(float j=0;j<h;j++){
 stroke(this.pixels[i][j]);
 point(i,j);
 }
