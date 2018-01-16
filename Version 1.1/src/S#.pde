@@ -13,14 +13,14 @@ this.pixels[i].push(color(255,255,255));
 }
 }
 };
-void background(col){
+void background(color col){
  for(var i=0;i<w;i++){
    for(var j=0;j<h;j++){
      this.pixels[i][j]=col;
    }
  }
 }
-void point(x,y,col){
+void point(float x,float y,color col){
 if(x<w&&y<w&&x>0&&y>0){
 this.pixels[x][y]=col;
 }
