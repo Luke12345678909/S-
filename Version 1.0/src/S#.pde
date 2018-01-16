@@ -12,7 +12,7 @@ this.pixels[i].push(color(255,255,255));
 }
 }
 };
-void point(x,y,col){
+void point(float x,float y,color col){
 if(x<w&&y<w&&x>0&&y>0){
 this.pixels[x][y]=col;
 }
